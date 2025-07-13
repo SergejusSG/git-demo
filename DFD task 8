@@ -76,8 +76,25 @@
         <mxCell id="d16TuYwRseI8_dlwSVwR-81" value="&lt;table style=&quot;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-col-size=&quot;sm&quot; data-end=&quot;1736&quot; data-start=&quot;1723&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table style=&quot;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td data-end=&quot;1808&quot; data-start=&quot;1736&quot; data-col-size=&quot;md&quot;&gt;&lt;code data-end=&quot;1806&quot; data-start=&quot;1738&quot;&gt;Data cleaned using SQL: deduplication, standardization, enrichment&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="369.5" y="471" width="195" height="108" as="geometry" />
         </mxCell>
-        <mxCell id="d16TuYwRseI8_dlwSVwR-82" value="&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;strong style=&quot;text-align: start;&quot; data-end=&quot;900&quot; data-start=&quot;880&quot;&gt;Load to Staging:&lt;/strong&gt;&lt;br style=&quot;text-align: start;&quot; data-end=&quot;903&quot; data-start=&quot;900&quot;&gt;&lt;span style=&quot;font-family: -webkit-standard; text-align: start;&quot;&gt;Data is ingested from CSV files into&amp;nbsp;&lt;/span&gt;&lt;code style=&quot;text-align: start;&quot; data-end=&quot;949&quot; data-start=&quot;942&quot;&gt;EXT_*&lt;/code&gt;&lt;span style=&quot;font-family: -webkit-standard; text-align: start;&quot;&gt;&amp;nbsp;external tables using FDW.&lt;/span&gt;&lt;br style=&quot;text-align: start;&quot; data-end=&quot;979&quot; data-start=&quot;976&quot;&gt;&lt;span style=&quot;font-family: -webkit-standard; text-align: start;&quot;&gt;Then moved into&amp;nbsp;&lt;/span&gt;&lt;code style=&quot;text-align: start;&quot; data-end=&quot;1004&quot; data-start=&quot;997&quot;&gt;SRC_*&lt;/code&gt;&lt;span style=&quot;font-family: -webkit-standard; text-align: start;&quot;&gt;&amp;nbsp;source tables using&amp;nbsp;&lt;/span&gt;&lt;code style=&quot;text-align: start;&quot; data-end=&quot;1031&quot; data-start=&quot;1025&quot;&gt;CAST&lt;/code&gt;&lt;span style=&quot;font-family: -webkit-standard; text-align: start;&quot;&gt;&amp;nbsp;to&amp;nbsp;&lt;/span&gt;&lt;b&gt;&lt;code style=&quot;text-align: start;&quot; data-end=&quot;1044&quot; data-start=&quot;1035&quot;&gt;VARCHAR&lt;/code&gt;&lt;span style=&quot;font-family: -webkit-standard; text-align: start;&quot;&gt;.&lt;/span&gt;&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="397" y="646" width="140" height="100" as="geometry" />
+        <mxCell id="d16TuYwRseI8_dlwSVwR-82" value="&lt;div&gt;&lt;div&gt;Cleanse:&amp;nbsp;&lt;/div&gt;&lt;div&gt;Data is validated, standardized, and deduplicated.&lt;/div&gt;&lt;div&gt;Mappings align inconsistent values. Nulls handled.&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="369.5" y="650" width="195" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="d16TuYwRseI8_dlwSVwR-84" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.065;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="d16TuYwRseI8_dlwSVwR-80">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="316.25" y="612" as="sourcePoint" />
+            <mxPoint x="366.25" y="562" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d16TuYwRseI8_dlwSVwR-86" value="Transform" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="d16TuYwRseI8_dlwSVwR-84">
+          <mxGeometry x="-0.0763" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d16TuYwRseI8_dlwSVwR-85" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" target="d16TuYwRseI8_dlwSVwR-80">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="316.25" y="388" as="sourcePoint" />
+            <mxPoint x="366.25" y="338" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
